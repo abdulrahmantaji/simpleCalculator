@@ -18,7 +18,7 @@ buttons.map((button) => {
       case "=":
         if (x == "" || op == "") break;
         let val = operate(Number(x), Number(display.innerText), op);
-        display.innerText = (Math.round(val * 100) / 100).toFixed(5);
+        display.innerText = (Math.round(val * 100000) / 100000).toFixed(5);
         x = "";
         op = "";
         clear = true;
