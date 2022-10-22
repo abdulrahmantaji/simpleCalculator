@@ -58,7 +58,7 @@ function operate(x, y, op) {
   } else if (op === "*") {
     return x * y;
   } else if (op === "/") {
-    if (x == 0) {
+    if (y == 0) {
       return "Can not divide on zero!!!";
     } else {
       return x / y;
